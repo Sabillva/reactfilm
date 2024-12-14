@@ -1,0 +1,286 @@
+body {
+  background-color: #a49a9a;
+}
+
+.container {
+  font-family: "Poppins", sans-serif;
+  padding: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.container-left {
+  width: 68%;
+}
+
+.container-right {
+  width: 30%;
+}
+
+#movie-search {
+  padding: 10px;
+  margin-left: 10px;
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-search {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.list-inp {
+  padding: 12px;
+  width: 95%;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  
+}
+
+.list-items {
+  max-height: 220px;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 30px;
+}
+
+.moviecards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  border: 1px solid #eee;
+  border-radius: 30px;
+  margin: 10px;
+  padding: 20px;
+  width: 30%;
+  background-color: #eff2e7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  margin-bottom: 15px;
+}
+
+.bts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-primary-add {
+  background-color: #94a067;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary-add:hover {
+  background-color: #647039;
+}
+
+.details-container {
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 35px;
+  background-color: #eff2e7;
+  border-radius: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.movie-details p {
+  margin: 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.go-to-trailer-button {
+  background-color: #94a067;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 15px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.go-to-trailer-button:hover {
+  background-color: #647039;
+}
+
+.list-area {
+  width: 90%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  background-color: #fafafa;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px;
+  font-size: 14px;
+  border: 1px solid #eee;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.list-item button {
+  background-color: #eb1111;
+  color: #fff;
+  border: none;
+  padding: 13px 13px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.lists-container {
+  max-width: 80%;
+  margin: 25px auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.lists-header {
+  background-color: #94a067;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 30px 30px 0 0;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lists-content {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 0 0 30px 30px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lists-ul {
+  padding: 0;
+  list-style: none;
+}
+
+.lists-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  background-color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.lists-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.lists-item h3 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.lists-item-ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.lists-item-li {
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 16px;
+}
+
+.lists-item-li::before {
+  content: "•";
+  color: #94a067;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .container-left,
+  .container-right {
+    width: 94%;
+  }
+
+  #movie-search {
+    width: 60%;
+    margin-bottom: 15px;
+  }
+
+  .moviecards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .list-items {
+    padding: 10px;
+  }
+
+  .details-container {
+    padding: 25px;
+  }
+
+  .lists-container {
+    width: 90%;
+  }
+
+  .lists-header {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .lists-content {
+    padding: 15px;
+  }
+
+  .lists-item h3 {
+    font-size: 18px;
+  }
+
+  .lists-item-li {
+    font-size: 14px;
+  }
+}
